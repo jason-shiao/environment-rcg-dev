@@ -7,6 +7,7 @@ dependencies:
   name: exposecontroller
   repository: http://chartmuseum.jenkins-x.io
   version: 2.3.118
-- name: fsa-bcst-uhd-router-svc
+- alias: fsa-bcst-uhd-router-svc
+  name: uhd-router-svc
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
   version: 1.0.1
