@@ -9,4 +9,4 @@ dependencies:
   version: 2.3.118
 - name: fsa-bcst-uhd-router-svc
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
-  version: 1.0.1
+  version: 1.0.2
