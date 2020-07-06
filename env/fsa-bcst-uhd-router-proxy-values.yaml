@@ -1,4 +1,4 @@
-fsa-bcst-ha-proxy:
+fsa-bcst-uhd-router-proxy:
   image:
     repository: haproxy
     tag: 2.1.7
@@ -8,10 +8,12 @@ fsa-bcst-ha-proxy:
         mode tcp
       frontend backend
         log global
-        bind *:80
+        bind *:7978
         use_backend backend
       backend backend
         mode tcp
-        balance roundrobin
         server main 10.23.134.11:7978 check
         server failover 10.23.134.12:7978 check backup
+  service:
+    internalPort: 7978
+    externalPort: 7978
