@@ -1,6 +1,7 @@
 fsa-bcst-uhd-router-svc:
   env:
+    VSM_HOST: rcg-fsa-bcst-uhd-router-proxy.rcg
+    VSM_PORT: 7978
     VSM_COMMAND-TIMEOUT-MS: 1000
     VSM_RESPONSE-TIMEOUT-MS: 3000
     VSM_EVENT-CACHE-EXPIRY-WRITE-SECONDS: 3600
-## VSM_HOST and VSM_PORT will be overriden in argo application.
